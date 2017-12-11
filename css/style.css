@@ -122,6 +122,8 @@ body,
     background: #ebedee;
     text-align: center;
     padding: 35px;
+	display: none;
+
 }
 
 @media (max-width: 768px){
@@ -134,8 +136,3 @@ body,
         height: initial;
     }
 }
-
-
-
-	
-
