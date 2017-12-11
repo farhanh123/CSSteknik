@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font: normal 1.1em/1.5 sans-serif;
+  color: #222;
+  background-color: #e3e5e6;
+  /*
+  width: 90%;
+  margin: auto;
+  */
+}
+
+/* Layout Element Colors */
+.main-header{ background-color: #384047; }
+.main-logo{ background-color: #5fcf80; }
+.main-nav li{ background-color: #68dd94; }
+.primary-content{ background-color: #abfbc9; }
+.secondary-content{ background-color: #bbeccd; }
+.main-footer{ background-color: #ceead8; }
+
+/* Header, Banner, and Footer Layout */
+.main-logo a,
+.main-nav a{
+    color: white;
+    text-decoration: none;
+}
+/*
+.main-wrapper{
+    width: 90%;
+    margin: auto;
+}
+*/
+.main-header{
+    padding: 20px;
+	display: table;
+	width: 100%;
+	min-height: 150px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.main-logo{
+    width: 120px;
+}
+
+.main-logo, 
+.main-nav{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.main-logo, 
+.main-nav, 
+.main-nav li{
+    display: inline-block;
+}
+
+.main-logo,
+.main-nav li{
+    border-radius: 5px;
+}
+
+.main-logo a,
+.main-nav a{
+	color: white;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.main-nav li {
+	margin-right: 10px;
+}
+
+.main-nav{
+    padding-left: 50px;
+}
+
+/* Media Query */
+@media (max-width: 768px){
+    .main-logo,
+    .main-nav,
+    .main-nav li{
+        display: block;
+        width: initial;
+        margin: initial;
+    }
+    .main-nav{
+        padding-left: initial;
+    }
+    .main-nav li{
+        margin-top: 15px;
+    }
+}
+
+/* Column Layout */
+.col{
+    display: inline-block;
+    padding: 20px;
+	margin-right: -5px;
+	vertical-align: top;
+}
+.primary-content{
+    width: 60%;
+}
+.secondary-content{
+    width: 40%;
+}
+html,
+body,
+.main-wrapper,
+.col{
+    height: 100%;
+}
+
+.main-banner{
+    background: #ebedee;
+    text-align: center;
+    padding: 35px;
+}
+
+@media (max-width: 768px){
+    .main-logo,
+    .main-nav,
+    .main-nav li,
+    .col{
+        display: block;
+        width: initial;
+        height: initial;
+    }
+}
+
+
+
+	
+
